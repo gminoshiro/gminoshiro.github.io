@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Photo Privacy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #007AFF; padding-bottom: 10px; }
+        h2 { color: #007AFF; margin-top: 30px; }
+        h3 { color: #555; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border: 1px solid #ddd; }
+        th { background-color: #007AFF; color: white; }
+        .update-date { color: #888; font-size: 0.9em; }
+        .section { margin-bottom: 40px; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch a { color: #007AFF; text-decoration: none; margin: 0 10px; }
+        .lang-switch a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <a href="#ja">日本語</a> | <a href="#en">English</a>
+    </div>
+
+    <div id="ja" class="section">
+        <h1>Photo Privacy プライバシーポリシー</h1>
+        <p class="update-date">最終更新: 2025年12月25日</p>
+
+        <p>Photo Privacy（以下「当アプリ」）は、ユーザーのプライバシー保護を最優先に設計されたiOSアプリケーションです。<br>
+        本プライバシーポリシーでは、当アプリがどのようにユーザーの情報を扱うかを説明します。</p>
+
+        <h2>1. 収集する情報</h2>
+        <p><strong>当アプリは、ユーザーの個人情報を一切収集しません。</strong></p>
+
+        <table>
+            <tr>
+                <th>データ種別</th>
+                <th>収集</th>
+                <th>説明</th>
+            </tr>
+            <tr><td>写真・動画</td><td>❌ 収集しない</td><td>写真へのアクセスはメタデータ表示・編集・削除のみに使用し、外部送信されません</td></tr>
+            <tr><td>位置情報</td><td>❌ 収集しない</td><td>写真のEXIF内の位置情報を表示・編集する機能のみで、デバイスの位置情報は使用しません</td></tr>
+            <tr><td>連絡先</td><td>❌ 収集しない</td><td>当アプリは連絡先にアクセスしません</td></tr>
+            <tr><td>識別子</td><td>❌ 収集しない</td><td>広告IDやデバイスID等を収集しません</td></tr>
+            <tr><td>使用状況データ</td><td>❌ 収集しない</td><td>アクセス解析ツールを使用していません</td></tr>
+            <tr><td>課金情報</td><td>❌ 収集しない</td><td>サブスクリプションはAppleが管理し、当アプリは決済情報にアクセスしません</td></tr>
+        </table>
+
+        <h2>2. データの使用目的</h2>
+        <p><strong>当アプリは、ユーザーのデータを外部サーバーに送信しません。</strong></p>
+        <p>すべての処理は、以下の目的でのみデバイス内で行われます：</p>
+        <ul>
+            <li>写真・動画のメタデータ（EXIF情報）の表示</li>
+            <li>メタデータの編集（撮影日時、位置情報、カメラ情報など）</li>
+            <li>メタデータの削除（全削除または位置情報のみ削除）</li>
+            <li>編集後の写真のフォトライブラリへの保存</li>
+            <li>アプリ設定の保持</li>
+        </ul>
+
+        <h2>3. データの保存場所</h2>
+        <p>すべてのデータは、<strong>ユーザーのiPhone/iPad内にのみ保存</strong>されます。</p>
+
+        <table>
+            <tr>
+                <th>データ種別</th>
+                <th>保存場所</th>
+                <th>暗号化</th>
+                <th>iCloudバックアップ</th>
+            </tr>
+            <tr><td>写真・動画</td><td>フォトライブラリ</td><td>✅ iOS標準</td><td>✅ フォトライブラリ設定に従う</td></tr>
+            <tr><td>アプリ設定</td><td>UserDefaults</td><td>✅ iOS標準</td><td>✅ 含む</td></tr>
+            <tr><td>サブスク情報</td><td>StoreKit</td><td>✅ Apple管理</td><td>✅ Apple管理</td></tr>
+        </table>
+
+        <h2>4. 第三者への提供</h2>
+        <p><strong>当アプリは、ユーザーのデータを第三者に提供しません。</strong></p>
+        <p>以下のサービスも使用していません：</p>
+        <ul>
+            <li>❌ Google Analytics</li>
+            <li>❌ Firebase Crashlytics</li>
+            <li>❌ Facebook SDK</li>
+            <li>❌ 広告SDK</li>
+            <li>❌ その他のトラッキングツール</li>
+        </ul>
+
+        <h2>5. 必要な権限</h2>
+        <p>当アプリは、以下の権限のみを使用します：</p>
+        <ul>
+            <li><strong>写真ライブラリアクセス（読み込み）</strong>: メタデータを表示するため</li>
+            <li><strong>写真ライブラリアクセス（保存）</strong>: メタデータ削除後の写真を保存するため</li>
+        </ul>
+        <p>これらの権限は、PhotoKitフレームワークを通じてiOSの標準的なプライバシー保護機能の下で使用されます。</p>
+
+        <h2>6. セキュリティ</h2>
+        <h3>6.1 ローカル処理</h3>
+        <ul>
+            <li><strong>完全なローカル処理</strong>: すべてのメタデータ処理はデバイス内で完結</li>
+            <li><strong>外部送信なし</strong>: 写真データを外部サーバーに送信しません</li>
+            <li><strong>元データ保護</strong>: 削除処理は新しい写真として保存し、元画像は変更しません</li>
+        </ul>
+
+        <h3>6.2 StoreKit</h3>
+        <ul>
+            <li><strong>Apple管理</strong>: サブスクリプションはAppleのStoreKitで管理</li>
+            <li><strong>決済情報保護</strong>: 当アプリはクレジットカード情報にアクセスしません</li>
+        </ul>
+
+        <h2>7. サブスクリプション</h2>
+        <p>当アプリは、以下のサブスクリプションプランを提供しています：</p>
+        <ul>
+            <li><strong>月額プラン</strong>: ¥200/月（7日間無料トライアル）</li>
+            <li><strong>年額プラン</strong>: ¥1,500/年（7日間無料トライアル）</li>
+            <li><strong>買い切りプラン</strong>: ¥5,000（トライアルなし、永久利用）</li>
+        </ul>
+        <p>すべてのプランで全機能が無制限に利用可能です。サブスクリプションの管理はiOSの設定アプリから行えます。</p>
+
+        <h2>8. プライバシーポリシーの変更</h2>
+        <p>当アプリのプライバシーポリシーを変更する場合は、本ページを更新し、アプリ内でお知らせします。</p>
+
+        <h2>9. お問い合わせ</h2>
+        <p>プライバシーに関するご質問は、以下までお願いします：</p>
+        <ul>
+            <li><strong>Email</strong>: <a href="mailto:info@minosystems.com">info@minosystems.com</a></li>
+            <li><strong>開発者</strong>: Mino Systems</li>
+        </ul>
+    </div>
+
+    <hr style="margin: 60px 0;">
+
+    <div id="en" class="section">
+        <h1>Photo Privacy Privacy Policy</h1>
+        <p class="update-date">Last Updated: December 25, 2025</p>
+
+        <p>Photo Privacy (the "App") is an iOS application designed with user privacy as the top priority.<br>
+        This Privacy Policy explains how the App handles user information.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p><strong>The App does NOT collect any personal information.</strong></p>
+
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Collected</th>
+                <th>Description</th>
+            </tr>
+            <tr><td>Photos & Videos</td><td>❌ No</td><td>Photo access is used only for metadata display, editing, and removal; never transmitted externally</td></tr>
+            <tr><td>Location</td><td>❌ No</td><td>Only displays/edits location from photo EXIF; does not use device location services</td></tr>
+            <tr><td>Contacts</td><td>❌ No</td><td>The App does not access contacts</td></tr>
+            <tr><td>Identifiers</td><td>❌ No</td><td>No advertising IDs or device IDs collected</td></tr>
+            <tr><td>Usage Data</td><td>❌ No</td><td>No analytics tools used</td></tr>
+            <tr><td>Payment Info</td><td>❌ No</td><td>Subscriptions managed by Apple; the App has no access to payment information</td></tr>
+        </table>
+
+        <h2>2. How We Use Data</h2>
+        <p><strong>The App does NOT transmit user data to external servers.</strong></p>
+        <p>All processing is performed locally on the device for the following purposes:</p>
+        <ul>
+            <li>Displaying photo and video metadata (EXIF information)</li>
+            <li>Editing metadata (date/time, location, camera info, etc.)</li>
+            <li>Removing metadata (all metadata or location only)</li>
+            <li>Saving edited photos to the photo library</li>
+            <li>Storing app settings</li>
+        </ul>
+
+        <h2>3. Data Storage</h2>
+        <p>All data is <strong>stored only on the user's iPhone/iPad</strong>.</p>
+
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Storage</th>
+                <th>Encryption</th>
+                <th>iCloud Backup</th>
+            </tr>
+            <tr><td>Photos & Videos</td><td>Photo Library</td><td>✅ iOS Standard</td><td>✅ Follows Photo Library settings</td></tr>
+            <tr><td>App Settings</td><td>UserDefaults</td><td>✅ iOS Standard</td><td>✅ Included</td></tr>
+            <tr><td>Subscription Info</td><td>StoreKit</td><td>✅ Apple Managed</td><td>✅ Apple Managed</td></tr>
+        </table>
+
+        <h2>4. Third-Party Sharing</h2>
+        <p><strong>The App does NOT share user data with third parties.</strong></p>
+        <p>We do not use the following services:</p>
+        <ul>
+            <li>❌ Google Analytics</li>
+            <li>❌ Firebase Crashlytics</li>
+            <li>❌ Facebook SDK</li>
+            <li>❌ Advertising SDKs</li>
+            <li>❌ Any tracking tools</li>
+        </ul>
+
+        <h2>5. Required Permissions</h2>
+        <p>The App uses only the following permissions:</p>
+        <ul>
+            <li><strong>Photo Library Access (Read)</strong>: To display metadata</li>
+            <li><strong>Photo Library Access (Write)</strong>: To save photos after metadata removal</li>
+        </ul>
+        <p>These permissions are used through the PhotoKit framework under iOS's standard privacy protections.</p>
+
+        <h2>6. Security</h2>
+        <h3>6.1 Local Processing</h3>
+        <ul>
+            <li><strong>Complete Local Processing</strong>: All metadata processing is done on-device</li>
+            <li><strong>No External Transmission</strong>: Photo data is never sent to external servers</li>
+            <li><strong>Original Data Protection</strong>: Removal creates a new photo; original is unchanged</li>
+        </ul>
+
+        <h3>6.2 StoreKit</h3>
+        <ul>
+            <li><strong>Apple Managed</strong>: Subscriptions managed by Apple's StoreKit</li>
+            <li><strong>Payment Info Protection</strong>: The App has no access to credit card information</li>
+        </ul>
+
+        <h2>7. Subscriptions</h2>
+        <p>The App offers the following subscription plans:</p>
+        <ul>
+            <li><strong>Monthly Plan</strong>: ¥200/month (7-day free trial)</li>
+            <li><strong>Yearly Plan</strong>: ¥1,500/year (7-day free trial)</li>
+            <li><strong>Lifetime Plan</strong>: ¥5,000 (no trial, permanent access)</li>
+        </ul>
+        <p>All plans include unlimited access to all features. Subscriptions can be managed in iOS Settings.</p>
+
+        <h2>8. Changes to Privacy Policy</h2>
+        <p>If we update this Privacy Policy, we will update this page and notify users within the App.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>For privacy-related questions:</p>
+        <ul>
+            <li><strong>Email</strong>: <a href="mailto:info@minosystems.com">info@minosystems.com</a></li>
+            <li><strong>Developer</strong>: Mino Systems</li>
+        </ul>
+    </div>
+</body>
+</html>
